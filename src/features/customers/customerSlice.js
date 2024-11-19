@@ -13,7 +13,7 @@ const initialStateCustomer = {
           nationalId: action.payload.nationalId,
           createAt: action.payload.createAt,
         };
-      case "customer/customerUpdatename":
+      case "customer/updateName":
         return {
           ...state,
           fullName: action.payload.fullName,
@@ -34,7 +34,7 @@ const initialStateCustomer = {
   
   export function updateName(fullName) {
     return {
-      type: "account/updateName",
+      type: "customer/updateName",
       payload: fullName,
     };
   }
